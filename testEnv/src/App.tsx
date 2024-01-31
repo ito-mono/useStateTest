@@ -6,6 +6,7 @@ import { Text, ToggleButton } from "@ito-mono/usestate-test";
 
 function App() {
   const [count, setCount] = useState(0);
+  const;
 
   return (
     <>

@@ -1,10 +1,9 @@
-import { useState } from "react";
+import { useToggleButtonReturn } from ".";
 
-export function ToggleButton() {
-  const [isOn, setIsOn] = useState(false);
-  return <button onClick={onClick}>{isOn ? "ON" : "OFF"}</button>;
+export type ToggleButtonProps = {
+  props: useToggleButtonReturn;
+};
 
-  function onClick() {
-    setIsOn((prev) => !prev);
-  }
+export function ToggleButton({ props }: ToggleButtonProps) {
+  return <button onClick={props.onClick}>{props.isOn ? "ON" : "OFF"}</button>;
 }
