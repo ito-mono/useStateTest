@@ -9,13 +9,13 @@ export type useToggleButtonReturn = {
   onClick: () => void;
 };
 
-export function useToggleButton({
+export const useToggleButton = ({
   initialIsOn = false,
-}: useToggleButtonProps): useToggleButtonReturn {
+}: useToggleButtonProps): useToggleButtonReturn => {
   const [isOn, setIsOn] = useState(initialIsOn);
   return { isOn, onClick };
 
   function onClick() {
     setIsOn((prev) => !prev);
   }
-}
+};

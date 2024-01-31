@@ -2127,15 +2127,15 @@ var pt = Lr.exports;
 function Bt({ props: N }) {
   return /* @__PURE__ */ pt.jsx("button", { onClick: N.onClick, children: N.isOn ? "ON" : "OFF" });
 }
-function zt({
+const zt = ({
   initialIsOn: N = !1
-}) {
+}) => {
   const [v, pe] = Mr.useState(N);
   return { isOn: v, onClick: q };
   function q() {
     pe((re) => !re);
   }
-}
+};
 function qt({ children: N }) {
   return /* @__PURE__ */ pt.jsx("p", { children: N });
 }
