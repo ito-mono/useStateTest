@@ -3,9 +3,11 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { ToggleButton } from "./components/Button/ToggleButton";
+import { useToggleButton } from ".";
 
 function App() {
   const [count, setCount] = useState(0);
+  const ut = useToggleButton({ initialIsOn: true });
 
   return (
     <>
@@ -29,7 +31,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <ToggleButton></ToggleButton>
+      <ToggleButton props={ut}></ToggleButton>
     </>
   );
 }
