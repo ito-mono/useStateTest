@@ -2,11 +2,11 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { Text, ToggleButton } from "@ito-mono/usestate-test";
+import { Text, ToggleButton, useToggleButton } from "@ito-mono/usestate-test";
 
 function App() {
   const [count, setCount] = useState(0);
-  const;
+  const ut = useToggleButton({ initialIsOn: true });
 
   return (
     <>
@@ -31,7 +31,6 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <Text>a</Text>
-      <ToggleButton></ToggleButton>
     </>
   );
 }
