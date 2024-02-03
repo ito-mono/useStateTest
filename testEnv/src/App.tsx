@@ -2,15 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import {
-  Text,
-  use1,
-  use2,
-  use3,
-  use4,
-  Use5,
-  Use6,
-} from "@ito-mono/usestate-test";
+import useToggle from "@ito-mono/usestate-test";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,7 +12,7 @@ function App() {
   //const ut3 = use3();
   //const ut4 = use4(2);
   //const ut5 = Use5();
-  const ut6 = Use6();
+  const [a, useA] = useToggle();
 
   return (
     <>
