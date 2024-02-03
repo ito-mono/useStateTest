@@ -2,11 +2,25 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { Text, ToggleButton, useToggleButton } from "@ito-mono/usestate-test";
+import {
+  Text,
+  use1,
+  use2,
+  use3,
+  use4,
+  Use5,
+  Use6,
+} from "@ito-mono/usestate-test";
 
 function App() {
   const [count, setCount] = useState(0);
-  const ut = useToggleButton({ initialIsOn: true });
+  //const ut = useToggleButton({ initialIsOn: true });
+  //const ut1 = use1();
+  //const ut2 = use2(1);
+  //const ut3 = use3();
+  //const ut4 = use4(2);
+  //const ut5 = Use5();
+  const ut6 = Use6();
 
   return (
     <>
