@@ -7,10 +7,11 @@ export default defineConfig({
   plugins: [react(), dts()],
   build: {
     lib: {
-      entry: "src/index.ts",
-      name: "index",
-      fileName: "index",
-      formats: ["es", "cjs", "umd"],
+      entry: {
+        index: "src/index.ts", // エントリポイント
+        useToggle: "src/useToggle.ts", // 2番目のエントリポイント
+      },
+      formats: ["es", "cjs"],
     },
     outDir: "../dist",
     emptyOutDir: true,

@@ -35,6 +35,13 @@
       "focus": true,
       "execute": true,
       "commands": ["npm version patch"]
+    },
+    {
+      "name": "パッケージ取得",
+      "description": "パッケージ取得",
+      "focus": true,
+      "execute": true,
+      "commands": ["cd testEnv", "npm i -D @ito-mono/usestate-test"]
     }
   ]
 }

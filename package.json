@@ -10,5 +10,11 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "exports": {
+    "useToggle": {
+      "import": "./dist/useToggle.js",
+      "types": "./dist/useToggle.d.ts"
+    }
+  }
 }
