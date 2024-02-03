@@ -1,6 +1,6 @@
 {
   "name": "@ito-mono/usestate-test",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -10,5 +10,11 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "exports": {
+    "useToggle": {
+      "import": "./dist/useToggle.js",
+      "types": "./dist/useToggle.d.ts"
+    }
+  }
 }
