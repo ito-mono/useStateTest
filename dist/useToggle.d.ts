@@ -1,5 +1,2 @@
-/**
- * A quick and simple utility for toggle states
- */
-declare const useToggle: (initialState?: boolean) => [boolean, () => void];
+declare const useToggle: (initialValue?: boolean) => [boolean, () => void];
 export default useToggle;
